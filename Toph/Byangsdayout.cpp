@@ -8,71 +8,18 @@ int main()
 	ios_base::sync_with_stdio(false);
 	cin.tie(NULL);
 	
-    int a,b,c,t;
+    int n,a,b,c,d;
     
-    int max=INT_MIN; 
+    cin>>n;
+    while(n--){
+    	d=0;
+    	cin>>a>>b>>c;
+    	if(a+b>=c) d++;
+    	if(b+c>=a) d++;
+    	if(c+a>=b) d++;
     
-    cin>>t;
-    
-    while(t--){
-    	
-    cin>>a>>b>>c;
-    
-    
-    if(a>b){
-    	if(a>c)
-        {
-    		if(b+c>=a)
-    		{
-    			cout<<"Yes"<<endl;
-    			break;
-    		}
-    		else
-    		{ 
-    			cout<<"No"<<endl;
-    			break;
-    		}
-    	}
-    	else
-    	{
-    		if(a+b>=c)
-    		{
-    			
-    			cout<<"Yes"<<endl;
-    			break;
-    		}
-    		else
-    		{
-    			
-    			cout<<"No"<<endl;
-    			break;
-    		}
-    	}
+        cout<<((d==3)?"Yes" : "No")<<endl;
     }
-    else{
-    	if(b>c)
-    	{
-    	  if(a+c>=b){
-      	 cout<<"Yes"<<endl;
-      	 break;
-      	}
-      	else
-      	  cout<<"No"<<endl;
-      	  break;
-    	}
-    	else
-    	{
-    		if(a+b>=c){
-    			cout<<"Yes"<<endl;
-    			break;
-    		}
-    		else
-    		{
-    			cout<<"No"<<endl;
-    			break;
-    		}
-    	}
-    }
-    }
+    
     
 }

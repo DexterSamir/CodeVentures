@@ -5,9 +5,9 @@ using namespace std;
 
 int main()
 {
-    int n;
+    double n;
     
     cin>>n;
     
-    cout<<(int)pow(2,n-1)<<endl;
+    cout<<fixed<<setprecision (4)<<3.141592653589793*n*n;
 }
