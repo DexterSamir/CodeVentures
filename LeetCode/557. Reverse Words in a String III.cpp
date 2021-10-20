@@ -8,7 +8,6 @@ public:
         while(getline(str,r,sp)){
             reverse(r.begin(),r.end());
             res += r;
-            if()
             res += sp;
         }
         res.pop_back();
