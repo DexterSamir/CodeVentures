@@ -14,6 +14,8 @@ public:
         
         ListNode *onestep,*twostep;
         
+        onestep=twostep=head;
+        
         while( twostep && twostep->next){
             twostep = twostep->next->next;
             onestep = onestep->next;
