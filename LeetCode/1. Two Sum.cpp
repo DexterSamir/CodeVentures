@@ -20,3 +20,23 @@ public:
         return result;
     }
 };
+
+//solution 2
+
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        map<int,int> m;
+        int i,n;
+        for(i=0;i<nums.size();i++){
+            auto itr = m.find(target-nums[i]);
+            if(itr!= m.end()){
+                n= itr->second;
+                return {i,n};
+            }
+            
+            m.insert({nums[i],i});
+        }
+        return {i,n};
+    }
+};
