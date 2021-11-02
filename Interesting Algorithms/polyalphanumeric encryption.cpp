@@ -9,6 +9,7 @@ vector<int>vec={1,2,2,1,2};
 
 void ceasrCipher(int vecnum){
     int n;
+    // enter integer valuue k, shifting value
     cout<<"Enter ceaser key of string"<<vecnum<<endl;
     cin>>n;
     if(n>26) n%=26;
