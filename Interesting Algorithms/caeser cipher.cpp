@@ -4,6 +4,8 @@ using namespace std;
 int main(){
     int n;
     cin>>n;
+    if(n>26) n%=26;
+    
     for(char i='A' ;i<='Z';i++){
         char c=i+n;
         //cout<<c;
